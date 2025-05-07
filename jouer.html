@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>a MEMORY a</h1>
+
+    <nav>
+        <ul class="nav justify-content-left">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="signIn.html">s'inscrire</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="connect.html">se connecter</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="profil.html">profil</a>
+            </li>
+            <li class="nav-item selected-nav">
+                <a class="nav-link" href="jouer.html">jouer</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="formE" id="formE">
+        <div class="input">
+        
+            <div class="level">
+                <label for="gameChoice">niveau de difficulté</label>
+                <select name="level" id="level">
+                    <option value="">--</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+        
+                </select>
+            </div>
+            <button id="bu">Start game</button>
+        </div>
+       
+
+    </div>
+    <div class="formD" id="formD">
+     
+    </div>
+    <div class="points" id="points">
+        <h2>POINTS: <span id="score">0</span></h2>
+    </div>
+    
+    
+    <script src="js/game.js" type="module"></script>
+</body>
+</html>
